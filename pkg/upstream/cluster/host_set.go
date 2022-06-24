@@ -28,7 +28,6 @@ import (
 // hostSet is an implementation of types.HostSet
 type hostSet struct {
 	once     sync.Once
-	mux      sync.RWMutex
 	allHosts []types.Host
 }
 
